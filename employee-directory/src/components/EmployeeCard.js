@@ -6,13 +6,16 @@ function EmployeeCard(props) {
             <div className="content">
                 <ul>
                     <li>
-                        <strong>Name:</strong> {props.lastName} + ", "{props.firstName}
+                        <strong>Name:</strong> {props.lastName}, {props.firstName}
                     </li>
                     <li>
                         <strong>Position:</strong> {props.position}
                     </li>
                     <li>
                         <strong>Start Date:</strong> {props.startDate}
+                    </li>
+                    <li>
+                        <strong>Phone Number:</strong> {props.phoneNumber}
                     </li>
                 </ul>
             </div>
