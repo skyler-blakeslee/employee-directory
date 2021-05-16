@@ -8,7 +8,7 @@ class EmployeeResultContainer extends Component {
   state = {
     search: "",
     results: [],
-    originalResults: []
+    originalResults: [],
   };
 
   // When this component mounts, search the Random User API

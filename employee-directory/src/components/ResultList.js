@@ -14,7 +14,7 @@ function ResultList(props) {
       <tbody>
         {
           props.results.map((result, index) => (
-            <tr className="" key={index} style={{ margin: "20px", border: "solid" }}>
+            <tr key={index}>
               <td>
                 <img alt={result.medium} className="img-fluid" src={result.picture.medium} />
               </td>
