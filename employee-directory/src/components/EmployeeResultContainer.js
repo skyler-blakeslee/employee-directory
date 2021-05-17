@@ -53,6 +53,30 @@ class EmployeeResultContainer extends Component {
     console.log(this.state.results);
   }
 
+  sortByFirstName = () => {
+    let sortedResult = this.state.results.sort((employeeA, employeeB) => {
+      let firstNameA = employeeA.name.first,
+        firstNameB = employeeB.name.first;
+      if (firstNameA < firstNameB) return -1;
+      if (firstNameA > firstNameB) return 1;
+      return 0;
+    });
+    this.setState({ results: [...sortedResult] });
+    console.log(this.state.results);
+  }
+
+  sortByStartDate = () => {
+    let sortedResult = this.state.results.sort((employeeA, employeeB) => {
+      let startDateA = employeeA.registered.date,
+        startDateB = employeeB.registered.date;
+      if (startDateA < startDateB) return -1;
+      if (startDateA > startDateB) return 1;
+      return 0;
+    });
+    this.setState({ results: [...sortedResult] });
+    console.log(this.state.results);
+  }
+
   handleInputChange = event => {
     const value = event.target.value;
     this.setState({
@@ -77,6 +101,8 @@ class EmployeeResultContainer extends Component {
         />
         <ResultList results={this.state.results}
           sortByLastName={this.sortByLastName.bind(this)}
+          sortByFirstName={this.sortByFirstName.bind(this)}
+          sortByStartDate={this.sortByStartDate.bind(this)}
         />
       </div>
     );
