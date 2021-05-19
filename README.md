@@ -2,7 +2,7 @@
 
 A basic Employee Directory developed by Skyler Blakeslee.
 
-URL: https://dry-sierra-40120.herokuapp.com/
+URL: https://skyler-blakeslee.github.io/employee-directory/
 Git Repository: https://github.com/skyler-blakeslee/employee-directory
 
 ## Table of Contents
